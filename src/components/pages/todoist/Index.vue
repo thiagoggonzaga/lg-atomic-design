@@ -40,14 +40,15 @@ export default {
       if (this.titulo) {
         this.loading = true;
 
-        servicoTarefas.novaTarefa(this.titulo).then((sucesso) => {
-          if (sucesso) {
+        servicoTarefas.novaTarefa(this.titulo).then((novaTarefa) => {
+          if (novaTarefa.id) {
             this.titulo = '';
+            this.loading = false;
+
+            this.lista.push(novaTarefa);
 
             this.$toast.removeAllGroups();
             this.$toast.add({ severity: 'success', detail: 'Tarefa adicionada!', life: 2000 });
-
-            this.$_carregueTarefas();
           } else {
             this.loading = false;
           }

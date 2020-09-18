@@ -21,7 +21,12 @@ class ServicoDeTarefas {
       http.post('/tasks', {
         content: tarefa,
       }).then((response) => {
-        resolve(response.status === 200);
+        if (response.status === 200) {
+          resolve({
+            id: response.data.id,
+            titulo: response.data.content,
+          });
+        }
       });
     });
   }
