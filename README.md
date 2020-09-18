@@ -1,5 +1,9 @@
 # LG Atomic Design
 
+# Todoist
+
+Para funcionar corretamente insira seu token no arquivo `services\http.js`
+
 ## Project setup
 ```
 yarn install

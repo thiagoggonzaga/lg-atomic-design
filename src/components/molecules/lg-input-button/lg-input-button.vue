@@ -7,7 +7,12 @@
       </span>
     </div>
     <div class="p-field p-col-12 p-sm-2">
-      <lg-button :label="label" @click="$listeners.click" :disabled="disabledButton" />
+      <lg-button
+        :label="label"
+        @click="$listeners.click"
+        :disabled="disabledButton"
+        :loading="$attrs.loading"
+      />
     </div>
   </div>
 </template>

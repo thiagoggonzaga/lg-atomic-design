@@ -7,7 +7,8 @@
       </div>
       <div>Layout Padrão</div>
 
-      <router-link class="lg-aa-layout__topo__link" to="/tarefas">Tarefas</router-link>
+      <router-link class="lg-aa-layout__topo__link" to="/tarefas">Tarefas (Vuex)</router-link>
+      <router-link class="lg-aa-layout__topo__link" to="/todoist">Tarefas (Todoist)</router-link>
       <router-link class="lg-aa-layout__topo__link" to="/configuracao">Configuração</router-link>
     </header>
 

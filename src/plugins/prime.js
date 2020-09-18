@@ -12,6 +12,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Card from 'primevue/card';
 import Paginator from 'primevue/paginator';
+import BlockUI from 'primevue/blockui';
 
 Vue.use(ToastService);
 Vue.directive('ripple', Ripple);
@@ -25,3 +26,4 @@ Vue.component('p-data-table', DataTable);
 Vue.component('p-column', Column);
 Vue.component('p-card', Card);
 Vue.component('p-paginator', Paginator);
+Vue.component('p-block-ui', BlockUI);

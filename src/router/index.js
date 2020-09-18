@@ -17,6 +17,10 @@ export default new VueRouter({
       name: 'tarefas',
       component: () => import(/* webpackChunkName: "tarefas" */ '../components/pages/tarefas/Index.vue'),
     }, {
+      path: '/todoist',
+      name: 'todoist',
+      component: () => import(/* webpackChunkName: "todoist" */ '../components/pages/todoist/Index.vue'),
+    }, {
       path: '/configuracao',
       name: 'configuracao',
       component: () => import(/* webpackChunkName: "configuracao" */ '../components/pages/configuracao/Index.vue'),

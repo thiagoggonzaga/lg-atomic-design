@@ -5,7 +5,7 @@
     :iconPos="iconPos"
     :disabled="disabled"
     :label="!loading ? label : ''"
-    :class="{ 'w-100': block }"
+    :style="{ 'width': block ? '100%' : '' }"
     :badge="badge"
     :badgeClass="badgeClass"
   />
